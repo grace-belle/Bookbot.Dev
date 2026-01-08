@@ -21,5 +21,5 @@ def sorted_report(count_dict):
     report = []
     for char, num in sorted(count_dict.items(), key=lambda item: item[1], reverse=True):
         report.append(f"{char}: {num}")
-    for i in len(report):
-        print(report,sep="\n")
+    for line in report:
+        print(line,sep="\n")
